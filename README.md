@@ -1,68 +1,88 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+ <img width="200" src="./src/assets/mail.png" alt="Contact">
+</p>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📝 Summary
 
-### `yarn start`
+- [About](#about)
+- [Tools](#tools)
+- [Preview](#preview)
+- [Usage](#usage)
+- [Author](#author)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## About <a name = "about"></a>
 
-### `yarn test`
+A web app built with ReactJS to send contact info for an PHP API built with Laravel
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## Tools: <a name = "tools"></a>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [ReactJS](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [React Testing Library](https://testing-library.com/)
+- [React Input Mask](https://github.com/sanniassin/react-input-mask)
+- [Axios](https://github.com/axios/axios)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Preview<a name = "preview"></a>
 
-### `yarn eject`
+<h3> Contact Page </h3> <br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="https://i.ibb.co/c8fr1Hz/Screenshot-from-2020-07-27-17-50-55.png" alt="Contact Page App" border="0">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Usage <a name="usage"></a>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Requirements <a name = "requirements"></a>
 
-## Learn More
+After cloning this repo, you may need [Npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/) to install and start the local server. In the future, I intend to deploy this project at heroku or netlify to make it easier to test.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installing
 
-### Code Splitting
+In the project root folder, you may execute
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```sh
+yarn install
+```
 
-### Analyzing the Bundle Size
+or
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```sh
+npm install
+```
 
-### Making a Progressive Web App
+to install its dependencies.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+---
 
-### Advanced Configuration
+To run the project locally, you only need to run
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```sh
+yarn start
+```
+after installing its dependencies and the local server will be provided in http://localhost:3000
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+---
 
-### `yarn build` fails to minify
+## Author <a name = "author"></a>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+👤 **Emanuel Resende**
+
+- LinkedIn: [@erbiet](https://linkedin.com/in/erbiet)
+- Github: [@emanuelbiet](https://github.com/emanuelbiet)
+
+---
+
+## Thanks for the attention!
