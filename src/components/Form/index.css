@@ -22,6 +22,11 @@ body {
 img {
   width: 40%;
   margin-bottom: 24px;
+  transition: transform 1.5s;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
 
 input[type=text],
