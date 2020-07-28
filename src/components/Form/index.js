@@ -6,7 +6,7 @@ import api from "../../services/api";
 import "./index.css";
 import logoImg from "../../assets/mail.png";
 
-import { Error } from "./styles";
+import { Error, Success } from "./styles";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -15,6 +15,7 @@ const Form = () => {
   const [message, setMessage] = useState("");
   const [attachedFile, setAttachedFile] = useState("");
   const [inputError, setInputError] = useState("");
+  const [inputSuccess, setInputSuccess] = useState(false);
 
   const onFormSubmit = async (e) => {
     e.preventDefault();
@@ -29,8 +30,9 @@ const Form = () => {
       })
       .then(
         (response) => {
-          console.log(response);
+          console.log(response.data);
           setInputError("");
+          setInputSuccess(true);
         },
         (error) => {
           setInputError(error.message);
@@ -50,6 +52,12 @@ const Form = () => {
             <Error>
               <strong>{inputError}</strong>
             </Error>
+          )}
+
+          {inputSuccess && (
+            <Success>
+              <strong>Seus dados foram enviados com sucesso!</strong>
+            </Success>
           )}
 
           <label>Nome</label>
