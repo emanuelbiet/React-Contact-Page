@@ -4,7 +4,7 @@ const api = axios.create({
   baseURL: 'http://localhost:8000/api',
   headers: {
     'Access-Control-Allow-Origin': '*',
-    'Content-Type': 'application/json'
+    'Content-Type': 'multipart/form-data'
   }
 });
 

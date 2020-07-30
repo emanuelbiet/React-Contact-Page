@@ -20,14 +20,16 @@ const Form = () => {
   const onFormSubmit = async (e) => {
     e.preventDefault();
 
+    const data = new FormData();
+
+    data.append('name', name);
+    data.append('email', email);
+    data.append('telephone', telephone);
+    data.append('message', message);
+    data.append('attachedFile', attachedFile, attachedFile.name);
+
     await api
-      .post("/store", {
-        name,
-        email,
-        telephone,
-        message,
-        attachedFile,
-      })
+      .post("/store", data)
       .then(
         (response) => {
           console.log(response.data);
@@ -35,6 +37,7 @@ const Form = () => {
           setInputSuccess(true);
         },
         (error) => {
+          setInputSuccess("");
           setInputError(error.message);
         }
       );
@@ -108,7 +111,7 @@ const Form = () => {
             id="attachedFile"
             name="attachedFile"
             onChange={(e) =>
-              setAttachedFile(e.target.files || e.dataTransfer.files)
+              setAttachedFile(e.target.files[0])
             }
             data-testid="attachedFile"
             required
