@@ -32,13 +32,12 @@ const Form = () => {
       .post("/store", data)
       .then(
         (response) => {
-          console.log(response.data);
           setInputError("");
           setInputSuccess(true);
         },
         (error) => {
           setInputSuccess("");
-          setInputError(error.message);
+          setInputError(true);
         }
       );
   };
@@ -52,13 +51,13 @@ const Form = () => {
       <div>
         <form onSubmit={onFormSubmit} encType="multipart/form-data">
           {inputError && (
-            <Error>
-              <strong>{inputError}</strong>
+            <Error id="inputError">
+              <strong>Ops! Algum erro aconteceu com o envio dos seus dados. Verifique-os e tente novamente!</strong>
             </Error>
           )}
 
           {inputSuccess && (
-            <Success>
+            <Success id="inputSuccess">
               <strong>Seus dados foram enviados com sucesso!</strong>
             </Success>
           )}
@@ -117,7 +116,7 @@ const Form = () => {
             required
           />
           <div className="centeredDiv">
-            <input type="submit" data-testid="submitButton" value="Enviar" />
+            <input type="submit" data-testid="submitButton" id="submitButton" value="Enviar" />
           </div>
         </form>
       </div>
