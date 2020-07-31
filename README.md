@@ -10,6 +10,7 @@
 - [Tools](#tools)
 - [Preview](#preview)
 - [Usage](#usage)
+- [Testing](#testing)
 - [Author](#author)
 
 ---
@@ -29,6 +30,7 @@ A web app built with ReactJS to send contact info for an PHP API built with Lara
 - [Axios](https://github.com/axios/axios)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+- [Cypress](https://cypress.io/)
 
 ---
 
@@ -44,7 +46,7 @@ A web app built with ReactJS to send contact info for an PHP API built with Lara
 
 ### Requirements <a name = "requirements"></a>
 
-After cloning this repo, you may need [Npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/) to install and start the local server. In the future, I intend to deploy this project at heroku or netlify to make it easier to test.
+After cloning this repo, you may need [Npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/) to install and start the local server.
 
 ---
 
@@ -73,6 +75,30 @@ yarn start
 ```
 after installing its dependencies and the local server will be provided in http://localhost:3000
 
+
+---
+
+## Testing <a name = "testing"> </a>
+
+### Unit tests:
+
+```sh
+yarn test
+```
+### Integration tests 
+
+#### Warning: Back-end must be running.
+
+To launch cypress browser:
+
+```sh
+yarn integration-test
+```
+To run tests and record screen:
+
+```sh
+yarn cypress:record
+```
 
 ---
 
